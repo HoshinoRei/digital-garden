@@ -1,7 +1,7 @@
 [
 {
 		"title": "Docker Swarm 删除节点",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/1/",
 		"content": "在 Node 上\ndocker swarm leave\n\n在 Manager 上\ndocker node rm &lt;node_name&gt;\n\n参考\n\ndocker swarm 删除节点",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Docker 通过代理拉取镜像",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/2/",
 		"content": "编辑 /etc/docker/daemon.json\nsudo vim /etc/docker/daemon.json\n\n写入\n{\n&quot;proxies&quot;: {\n&quot;default&quot;: {\n&quot;httpProxy&quot;: &quot;http://:&quot;,\n&quot;httpsProxy&quot;: &quot;http://&quot;,\n&quot;noProxy&quot;: &quot;&quot;\n}\n}\n}\n\n示例\n{\n&quot;proxies&quot;: {\n&quot;default&quot;: {\n&quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,\n&quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,\n&quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;\n}\n}\n}\n\n参考\n\nConfigure the Docker client",
 		"tags": [ "note"]
@@ -17,15 +17,15 @@
 
 {
 		"title": "Digital Garden",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/4/",
 		"content": "Digital Garden",
-		"tags": [ "note"]
+		"tags": [ "note","Obsidian"]
 },
 
 {
 		"title": "Obsidian",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/3/",
 		"content": "Obsidian",
 		"tags": [ "note","Obsidian"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/5/",
 		"content": "<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 的 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/4/\">Digital Garden</a> 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？\n其实里面的很多主题都是参考 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 本身的主题而制作的，咱们只需要在 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 的主题市场里挑一个自己喜欢的，然后再到 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/4/\">Digital Garden</a> 插件的列表里找到同名的主题就可以了。但是这个方法只适合两边都有的情况，如果有一边没有就只能自己应用主题看看效果了。\n参考\n\nHow do I preview the theme?",
 		"tags": [ "note"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "首页",
-		"date":"Fri Jun 07 2024 22:59:27 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 23:00:37 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "这只是一个用来占位的首页。\n\nRSS\nSitemap",
 		"tags": [ "note","gardenEntry"]
