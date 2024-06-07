@@ -34,6 +34,17 @@
 <h1 style="margin:15px!important">星野玲的数字花园</h1>
 </a>
 </div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
 </nav>
 </div>
 <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
@@ -41,6 +52,19 @@
 <a href="/digital-garden/" style="text-decoration:none">
 <h1 style="text-align:center">星野玲的数字花园</h1>
 </a>
+<div style="display:flex;justify-content:center">
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</div>
 <div class="folder" x-data="{isOpen: true}">
 <div x-show="isOpen" style="display:none" class="">
 <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Docker')}" @click.stop="isOpen=!isOpen">
@@ -69,16 +93,89 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop="" class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker 通过代理拉取镜像/">Docker 通过代理拉取镜像 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="">
 <div @click.stop="" class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/">首页 </a>
 </div>
 </div>
 </div>
 </nav>
 </div>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);e=e.textContent;e&&(window.document.getElementById("term").value=e.trim(),window.toggleSearch(),window.search())};const loadingSvg=`
+    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="1.5s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="1.5s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="1.5s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="3s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="3s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="3s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="8">
+              <animate attributeName="r"
+                   begin="0s" dur="1.5s"
+                   values="6;1;2;3;4;5;6"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+      </g>
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-07T17:05:13.820Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-07T17:05:13.820Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-07T17:05:13.820Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
+                        <div class="header-meta">
+                            <div class="header-tags">
+                                ${e.tags.map(e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>").join("")}
+                            </div>
+                        </div>
+                        ${e.content}
+                    </div>
+                </div>`:t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
+                        ${e.content}
+                    </div>
+                </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
 <h1 data-note-icon="">Docker Swarm 删除节点</h1>
