@@ -1,7 +1,7 @@
 [
 {
 		"title": "Docker Swarm 删除节点",
-		"date":"Fri Jun 07 2024 15:28:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 15:30:18 GMT+0000 (Coordinated Universal Time)",
 		"url":"/Docker Swarm 删除节点/",
 		"content": "在 Node 上\ndocker swarm leave\n\n在 Manager 上\ndocker node rm &lt;node_name&gt;\n\ndocker swarm 删除节点",
 		"tags": [ "note"]
