@@ -6,10 +6,11 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
+    commit-message:
+      prefix: build(npm)
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
     ignore:
       - dependency-name: "@sindresorhus/slugify"
         # For slugify, ignore all updates.
-        
