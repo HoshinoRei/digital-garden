@@ -8,10 +8,6 @@ function userEleventySetup(eleventyConfig) {
   // The eleventyConfig parameter stands for the the config instantiated in /.eleventy.js.
   // Feel free to add any plugin you want here instead of /.eleventy.js
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-
-    return {
-        pathPrefix: "/digital-garden/",
-    };
 }
 exports.userMarkdownSetup = userMarkdownSetup;
 exports.userEleventySetup = userEleventySetup;
