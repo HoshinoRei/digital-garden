@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Docker/Docker Swarm/Docker Swarm 删除节点/","created":"2024-06-07 21:41:09","updated":"2024-06-07 23:34:45"}
+{"dg-publish":true,"dg-path":"note/Docker/Docker Swarm/Docker Swarm 删除节点.md","dg-permalink":"1","permalink":"/1/","created":"2024-06-07 21:41:09","updated":"2024-06-08 05:11:04"}
 ---
 
 在 Node 上
