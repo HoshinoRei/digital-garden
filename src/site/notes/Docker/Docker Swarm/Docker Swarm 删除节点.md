@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/1","permalink":"/note/1/","created":"2024-06-07 21:41:09","updated":"2024-06-08 05:11:04"}
+{"dg-publish":true,"dg-permalink":"note/1","permalink":"/note/1/","created":"2024-06-07 21:41:09","updated":"2024-06-08 05:20:02"}
 ---
 
 在 Node 上
@@ -11,4 +11,5 @@ docker swarm leave
 docker node rm <node_name>
 ```
 
-[docker swarm 删除节点](https://www.cnblogs.com/klvchen/p/12048981.html)
+## 参考
+1. [docker swarm 删除节点](https://www.cnblogs.com/klvchen/p/12048981.html)
