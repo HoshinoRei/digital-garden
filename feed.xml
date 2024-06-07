@@ -3,8 +3,35 @@
     <title>星野玲的数字花园</title>
     <link href="https://hoshinorei.github.io/digital-garden/feed.xml" rel="self" >
     <link href="https://hoshinorei.github.io/digital-garden" >
-    <updated>2024-06-07T15:42:05Z</updated>
+    <updated>2024-06-07T15:47:27Z</updated>
     <id>https://hoshinorei.github.io/digital-garden</id>
+        <entry>
+            <title>
+                Docker 通过代理拉取镜像
+                
+            </title>
+            <updated>2024-06-07T21:50:56.000Z</updated>
+            <id>https://hoshinorei.github.io/digital-garden/Docker 通过代理拉取镜像/</id>
+            <content type="html">
+                &lt;p&gt;编辑 &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo vim /etc/docker/daemon.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;写入&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+ &amp;quot;proxies&amp;quot;: {
+   &amp;quot;default&amp;quot;: {
+     &amp;quot;httpProxy&amp;quot;: &amp;quot;http://proxy.example.com:3128&amp;quot;,
+     &amp;quot;httpsProxy&amp;quot;: &amp;quot;https://proxy.example.com:3129&amp;quot;,
+     &amp;quot;noProxy&amp;quot;: &amp;quot;*.test.example.com,.example.org,127.0.0.0/8&amp;quot;
+   }
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/network/proxy/#configure-the-docker-client&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Configure the Docker client&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://hoshinorei.github.io/digital-garden/Docker 通过代理拉取镜像/" >
+        </entry>
         <entry>
             <title>
                 Docker Swarm 删除节点
