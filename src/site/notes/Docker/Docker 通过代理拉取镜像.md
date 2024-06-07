@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/2","permalink":"/note/2/","created":"2024-06-07 21:48:31","updated":"2024-06-08 01:06:35"}
+{"dg-publish":true,"dg-permalink":"note/2","permalink":"/note/2/","created":"2024-06-07 21:48:31","updated":"2024-06-08 05:21:29"}
 ---
 
 编辑 `/etc/docker/daemon.json`
@@ -36,4 +36,5 @@ sudo vim /etc/docker/daemon.json
 }
 ```
 
- [Configure the Docker client](https://docs.docker.com/network/proxy/#configure-the-docker-client)
+## 参考
+1. [Configure the Docker client](https://docs.docker.com/network/proxy/#configure-the-docker-client)
