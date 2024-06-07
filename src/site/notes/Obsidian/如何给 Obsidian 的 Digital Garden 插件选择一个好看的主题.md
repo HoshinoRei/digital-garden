@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/5","permalink":"/note/5/","created":"2024-06-08 06:30:24","updated":"2024-06-08 06:48:00"}
+{"dg-publish":true,"dg-permalink":"note/5","permalink":"/note/5/","tags":["Obsidian"],"created":"2024-06-08 06:30:24","updated":"2024-06-08 07:00:30"}
 ---
 
 [[Obsidian/Obsidian\|Obsidian]] 的 [[Obsidian/Digital Garden\|Digital Garden]] 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？
