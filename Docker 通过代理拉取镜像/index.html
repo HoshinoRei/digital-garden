@@ -54,6 +54,40 @@
 </code></pre>
 <p><a href="https://docs.docker.com/network/proxy/#configure-the-docker-client" target="_blank" class="external-link">Configure the Docker client</a></p>
 </main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<script>async function fetchGraphData(){var e=await fetch("/graph.json").then(e=>e.json());return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(n,r){const l=Object.values(n).map(e=>e.neighbors).flat();return Object.keys(r).reduce((e,t)=>(-1!=l.indexOf(t)?r[t].hide||(n[t]=r[t]):e[t]=r[t],e),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes));var r,e=JSON.parse(JSON.stringify(e.links)),l=decodeURI(window.location.pathname),l=n[l]||Object.values(n).find(e=>e.home),a=(delete n[l.url],l.home||(r=Object.values(n).find(e=>e.home),delete n[r.url]),l.current=!0,{});a[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(a,n);nodes=Object.values(a);let i=(nodes=l.home?nodes:nodes.filter(e=>!e.home)).map(e=>e.id);return{nodes:nodes,links:e.filter(function(e){return-1<i.indexOf(e.target)&&-1<i.indexOf(e.source)})}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(t,n,r,a){if(null!=t){n=document.getElementById(n);width=n.offsetWidth,height=n.offsetHeight;const i=new Set;let l=null;const o=getCssVar("--graph-main"),u=getCssVar("--graph-muted");let e=ForceGraph()(n).graphData(t).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor(e=>null==l||(e.source.id==l.id||e.target.id==l.id)?o:u).nodeCanvasObject((e,t)=>{var n=e.neighbors&&e.neighbors.length||2,n=Math.min(7,Math.max(n/2,2)),r=(t.beginPath(),t.arc(e.x,e.y,n,0,2*Math.PI,!1),null==l||e==l||i.has(e.url)?t.fillStyle=o:t.fillStyle=u,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,n+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=o,t.stroke()),htmlDecode(e.title));t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(r,e.x,e.y+n+2)}).onNodeClick(e=>{window.location=e.url}).onNodeHover(e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach(e=>i.add(e))),l=e||null});return(a||null!=r&&4<t.nodes.length)&&setTimeout(()=>{e.zoomToFit(5,75)},r||200),e}}function renderLocalGraph(e,t,n){return window.graph&&window.graph._destructor(),renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter(e=>e.hide).map(e=>e.id);return{links:JSON.parse(JSON.stringify(e.links)).filter(e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target)),nodes:[...Object.values(e.nodes).filter(e=>!e.hide)]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div class="graph-title-container">
+<div class="graph-title">Connected Pages</div>
+<div id="graph-controls">
+<div class="depth-control">
+<label for="graph-depth">Depth</label>
+<div class="slider">
+<input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
+<datalist id="depthmarkers">
+<option value="1" label="1"></option>
+<option value="2" label="2"></option>
+<option value="3" label="3"></option>
+</datalist>
+</div>
+<span id="depth-display" x-text="depth"></span>
+</div>
+<div class="ctrl-right">
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+</div>
+</div>
+</div>
+<div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
+<div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+</div>
+</div>
+</aside>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
 <script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach(function(e){date=e.getAttribute("data-date")||e.innerText,null!=(parsed_date=null!=(parsed_date=luxon.DateTime.fromISO(date)).invalid?luxon.DateTime.fromSQL(date):parsed_date).invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)})</script>
