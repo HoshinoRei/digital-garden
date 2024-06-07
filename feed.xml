@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://hoshinorei.github.io/digital-garden/feed.xml" rel="self" >
     <link href="https://hoshinorei.github.io/digital-garden" >
-    <updated>2024-06-07T16:45:55Z</updated>
+    <updated>2024-06-07T16:46:28Z</updated>
     <id>https://hoshinorei.github.io/digital-garden</id>
         <entry>
             <title>
@@ -11,7 +11,7 @@
                 
             </title>
             <updated>2024-06-07T21:50:56.000Z</updated>
-            <id>https://hoshinorei.github.io/digital-garden/Docker 通过代理拉取镜像/</id>
+            <id>https://hoshinorei.github.io/digital-garden/digital-garden/Docker 通过代理拉取镜像/</id>
             <content type="html">
                 &lt;p&gt;编辑 &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo vim /etc/docker/daemon.json
@@ -30,7 +30,7 @@
 &lt;p&gt;&lt;a href=&quot;https://docs.docker.com/network/proxy/#configure-the-docker-client&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Configure the Docker client&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://hoshinorei.github.io/digital-garden/Docker 通过代理拉取镜像/" >
+            <link href="https://hoshinorei.github.io/digital-garden/digital-garden/Docker 通过代理拉取镜像/" >
         </entry>
         <entry>
             <title>
@@ -38,7 +38,7 @@
                 
             </title>
             <updated>2024-06-07T23:34:45.000Z</updated>
-            <id>https://hoshinorei.github.io/digital-garden/Docker Swarm 删除节点/</id>
+            <id>https://hoshinorei.github.io/digital-garden/digital-garden/Docker Swarm 删除节点/</id>
             <content type="html">
                 &lt;p&gt;在 Node 上&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker swarm leave
@@ -49,6 +49,6 @@
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/klvchen/p/12048981.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;docker swarm 删除节点&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://hoshinorei.github.io/digital-garden/Docker Swarm 删除节点/" >
+            <link href="https://hoshinorei.github.io/digital-garden/digital-garden/Docker Swarm 删除节点/" >
         </entry>
 </feed>
