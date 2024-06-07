@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://hoshinorei.github.io/feed.xml" rel="self" >
     <link href="https://hoshinorei.github.io" >
-    <updated>2024-06-07T17:05:13Z</updated>
+    <updated>2024-06-07T17:08:38Z</updated>
     <id>https://hoshinorei.github.io</id>
         <entry>
             <title>
@@ -23,13 +23,24 @@
                 Docker 通过代理拉取镜像
                 
             </title>
-            <updated>2024-06-07T21:50:56.000Z</updated>
+            <updated>2024-06-07T23:46:55.000Z</updated>
             <id>https://hoshinorei.github.io/digital-garden/Docker/Docker 通过代理拉取镜像/</id>
             <content type="html">
                 &lt;p&gt;编辑 &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo vim /etc/docker/daemon.json
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;写入&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+ &amp;quot;proxies&amp;quot;: {
+   &amp;quot;default&amp;quot;: {
+     &amp;quot;httpProxy&amp;quot;: &amp;quot;http://:&amp;quot;,
+     &amp;quot;httpsProxy&amp;quot;: &amp;quot;http://&amp;quot;,
+     &amp;quot;noProxy&amp;quot;: &amp;quot;&amp;quot;
+   }
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;示例&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
  &amp;quot;proxies&amp;quot;: {
    &amp;quot;default&amp;quot;: {
