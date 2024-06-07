@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>Docker Swarm 删除节点</title>
+<title>Docker 通过代理拉取镜像</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -62,14 +62,10 @@
 </div>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker/Docker 通过代理拉取镜像/">Docker 通过代理拉取镜像 </a>
 </div>
 </div>
-<div x-show="isOpen" style="display:none" class="">
-<div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker Swarm 删除节点/">Docker Swarm 删除节点 </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="">
-<div @click.stop="" class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker 通过代理拉取镜像/">Docker 通过代理拉取镜像 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
@@ -81,17 +77,25 @@
 </div>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Docker Swarm 删除节点</h1>
+<h1 data-note-icon="">Docker 通过代理拉取镜像</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-07 21:41:09"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-07 23:34:45"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-07 21:48:31"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-07 21:50:56"></span></div></div></div>
 </header>
-<p>在 Node 上</p>
-<pre><code class="language-bash">docker swarm leave
+<p>编辑 <code>/etc/docker/daemon.json</code></p>
+<pre><code class="language-bash">sudo vim /etc/docker/daemon.json
 </code></pre>
-<p>在 Manager 上</p>
-<pre><code class="language-bash">docker node rm &lt;node_name&gt;
+<p>写入</p>
+<pre><code class="language-json">{
+ &quot;proxies&quot;: {
+   &quot;default&quot;: {
+     &quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,
+     &quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,
+     &quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;
+   }
+ }
+}
 </code></pre>
-<p><a href="https://www.cnblogs.com/klvchen/p/12048981.html" target="_blank" class="external-link">docker swarm 删除节点</a></p>
+<p><a href="https://docs.docker.com/network/proxy/#configure-the-docker-client" target="_blank" class="external-link">Configure the Docker client</a></p>
 </main>
 <aside>
 <div class="sidebar">
