@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://hoshinorei.github.io/digital-garden//404/</loc>
-            <lastmod>2024-06-07T17:34:53.529Z</lastmod>
+            <loc>/404/</loc>
+            <lastmod>2024-06-07T17:37:29.258Z</lastmod>
         </url>
     
         <url>
-            <loc>https://hoshinorei.github.io/digital-garden//Docker/Docker Swarm/Docker Swarm 删除节点/</loc>
-            <lastmod>2024-06-07T17:34:53.533Z</lastmod>
+            <loc>/Docker/Docker Swarm/Docker Swarm 删除节点/</loc>
+            <lastmod>2024-06-07T17:37:29.262Z</lastmod>
         </url>
     
         <url>
-            <loc>https://hoshinorei.github.io/digital-garden//Docker/Docker 通过代理拉取镜像/</loc>
-            <lastmod>2024-06-07T17:34:53.533Z</lastmod>
+            <loc>/Docker/Docker 通过代理拉取镜像/</loc>
+            <lastmod>2024-06-07T17:37:29.262Z</lastmod>
         </url>
     
         <url>
-            <loc>https://hoshinorei.github.io/digital-garden//</loc>
-            <lastmod>2024-06-07T17:34:53.533Z</lastmod>
+            <loc>/</loc>
+            <lastmod>2024-06-07T17:37:29.262Z</lastmod>
         </url>
     
 </urlset>
