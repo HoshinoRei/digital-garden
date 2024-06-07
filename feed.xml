@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://hoshinorei.github.io/digital-garden">
+    <title>星野玲的数字花园</title>
+    <link href="https://hoshinorei.github.io/digital-garden/feed.xml" rel="self" >
+    <link href="https://hoshinorei.github.io/digital-garden" >
+    <updated>2024-06-07T15:29:03Z</updated>
+    <id>https://hoshinorei.github.io/digital-garden</id>
+        <entry>
+            <title>
+                Docker Swarm 删除节点
+                
+            </title>
+            <updated>2024-06-07T15:28:51Z</updated>
+            <id>https://hoshinorei.github.io/digital-garden/Docker Swarm 删除节点/</id>
+            <content type="html">
+                &lt;p&gt;在 Node 上&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker swarm leave
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 Manager 上&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker node rm &amp;lt;node_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/klvchen/p/12048981.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;docker swarm 删除节点&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://hoshinorei.github.io/digital-garden/Docker Swarm 删除节点/" >
+        </entry>
+</feed>
