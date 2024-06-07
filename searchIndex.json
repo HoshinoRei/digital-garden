@@ -1,7 +1,7 @@
 [
 {
 		"title": "Docker Swarm 删除节点",
-		"date":"Fri Jun 07 2024 16:47:57 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 16:51:08 GMT+0000 (Coordinated Universal Time)",
 		"url":"/Docker Swarm 删除节点/",
 		"content": "在 Node 上\ndocker swarm leave\n\n在 Manager 上\ndocker node rm &lt;node_name&gt;\n\ndocker swarm 删除节点",
 		"tags": [ "note"]
@@ -9,9 +9,17 @@
 
 {
 		"title": "Docker 通过代理拉取镜像",
-		"date":"Fri Jun 07 2024 16:47:57 GMT+0000 (Coordinated Universal Time)",
+		"date":"Fri Jun 07 2024 16:51:08 GMT+0000 (Coordinated Universal Time)",
 		"url":"/Docker 通过代理拉取镜像/",
 		"content": "编辑 /etc/docker/daemon.json\nsudo vim /etc/docker/daemon.json\n\n写入\n{\n&quot;proxies&quot;: {\n&quot;default&quot;: {\n&quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,\n&quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,\n&quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;\n}\n}\n}\n\nConfigure the Docker client",
 		"tags": [ "note"]
+},
+
+{
+		"title": "首页",
+		"date":"Fri Jun 07 2024 16:51:08 GMT+0000 (Coordinated Universal Time)",
+		"url":"/",
+		"content": "这只是一个用来占位的首页。",
+		"tags": [ "note","gardenEntry"]
 }
 ]
