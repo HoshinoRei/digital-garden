@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>首页</title>
+<title>Docker 通过代理拉取镜像</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -69,11 +69,11 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop="" class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker 通过代理拉取镜像/">Docker 通过代理拉取镜像 </a>
+<div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/Docker 通过代理拉取镜像/">Docker 通过代理拉取镜像 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop="" class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/">首页 </a>
+<div @click.stop="" class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/">首页 </a>
 </div>
 </div>
 </div>
@@ -81,11 +81,25 @@
 </div>
 <main class="content cm-s-obsidian">
 <header>
-<h1></h1>
+<h1 data-note-icon="">Docker 通过代理拉取镜像</h1>
 <div class="header-meta">
-</div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-07 21:48:31"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-07 21:50:56"></span></div></div></div>
 </header>
-<p>这只是一个用来占位的首页。</p>
+<p>编辑 <code>/etc/docker/daemon.json</code></p>
+<pre><code class="language-bash">sudo vim /etc/docker/daemon.json
+</code></pre>
+<p>写入</p>
+<pre><code class="language-json">{
+ &quot;proxies&quot;: {
+   &quot;default&quot;: {
+     &quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,
+     &quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,
+     &quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;
+   }
+ }
+}
+</code></pre>
+<p><a href="https://docs.docker.com/network/proxy/#configure-the-docker-client" target="_blank" class="external-link">Configure the Docker client</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -127,6 +141,9 @@
 </div>
 </div>
 </aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach(function(e){date=e.getAttribute("data-date")||e.innerText,null!=(parsed_date=null!=(parsed_date=luxon.DateTime.fromISO(date)).invalid?luxon.DateTime.fromSQL(date):parsed_date).invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)})</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>
