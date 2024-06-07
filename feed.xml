@@ -3,17 +3,21 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-07T22:49:10Z</updated>
+    <updated>2024-06-07T22:53:14Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
                 首页
                 
             </title>
-            <updated>2024-06-08T01:00:56.000Z</updated>
+            <updated>2024-06-08T01:02:28.000Z</updated>
             <id>https://digital-garden.bling.moe/</id>
             <content type="html">
                 &lt;p&gt;这只是一个用来占位的首页。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://digital-garden.bling.moe/feed.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://digital-garden.bling.moe/sitemap.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
             </content>
             <link href="https://digital-garden.bling.moe/" >
