@@ -10,7 +10,7 @@ function userEleventySetup(eleventyConfig) {
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     return {
-        pathPrefix: "/digital-garden",
+        pathPrefix: "/digital-garden/",
     };
 }
 exports.userMarkdownSetup = userMarkdownSetup;
