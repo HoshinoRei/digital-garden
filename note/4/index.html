@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>Docker Swarm 删除节点</title>
+<title>Digital Garden</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -82,7 +82,7 @@ CTRL + K
 <span class="foldername">Docker Swarm</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/1/">Docker Swarm 删除节点 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/1/">Docker Swarm 删除节点 </a>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ CTRL + K
 <span class="foldername">Obsidian</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/4/">Digital Garden </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/4/">Digital Garden </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -196,22 +196,13 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Docker Swarm 删除节点</h1>
+<h1 data-note-icon="">Digital Garden</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-07 21:41:09"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 05:20:02"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-08 06:38:12"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 06:38:33"></span></div></div></div>
 </header>
-<p>在 Node 上</p>
-<pre><code class="language-bash">docker swarm leave
-</code></pre>
-<p>在 Manager 上</p>
-<pre><code class="language-bash">docker node rm &lt;node_name&gt;
-</code></pre>
-<h2 id="参考" tabindex="-1">参考</h2>
-<ol>
-<li><a href="https://www.cnblogs.com/klvchen/p/12048981.html" target="_blank" class="external-link">docker swarm 删除节点</a></li>
-</ol>
+<p><a href="obsidian://show-plugin?id=digitalgarden" target="_blank" class="external-link">Digital Garden</a></p>
 <script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
 <aside>
@@ -243,21 +234,6 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-</div>
-</div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#参考">参考</a>
-</li>
-</ol>
-</nav>
 </div>
 </div>
 <div class="backlinks">
