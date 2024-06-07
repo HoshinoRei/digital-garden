@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://hoshinorei.github.io">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://hoshinorei.github.io/">
     <title>星野玲的数字花园</title>
-    <link href="https://hoshinorei.github.io/feed.xml" rel="self" >
-    <link href="https://hoshinorei.github.io" >
-    <updated>2024-06-07T17:08:38Z</updated>
-    <id>https://hoshinorei.github.io</id>
+    <link href="https://hoshinorei.github.io//feed.xml" rel="self" >
+    <link href="https://hoshinorei.github.io/" >
+    <updated>2024-06-07T17:12:01Z</updated>
+    <id>https://hoshinorei.github.io/</id>
         <entry>
             <title>
                 首页
                 
             </title>
             <updated>2024-06-08T01:00:56.000Z</updated>
-            <id>https://hoshinorei.github.io/digital-garden/</id>
+            <id>https://hoshinorei.github.io//digital-garden/</id>
             <content type="html">
                 &lt;p&gt;这只是一个用来占位的首页。&lt;/p&gt;
 
             </content>
-            <link href="https://hoshinorei.github.io/digital-garden/" >
+            <link href="https://hoshinorei.github.io//digital-garden/" >
         </entry>
         <entry>
             <title>
@@ -24,7 +24,7 @@
                 
             </title>
             <updated>2024-06-07T23:46:55.000Z</updated>
-            <id>https://hoshinorei.github.io/digital-garden/Docker/Docker 通过代理拉取镜像/</id>
+            <id>https://hoshinorei.github.io//digital-garden/Docker/Docker 通过代理拉取镜像/</id>
             <content type="html">
                 &lt;p&gt;编辑 &lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo vim /etc/docker/daemon.json
@@ -54,7 +54,7 @@
 &lt;p&gt;&lt;a href=&quot;https://docs.docker.com/network/proxy/#configure-the-docker-client&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Configure the Docker client&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://hoshinorei.github.io/digital-garden/Docker/Docker 通过代理拉取镜像/" >
+            <link href="https://hoshinorei.github.io//digital-garden/Docker/Docker 通过代理拉取镜像/" >
         </entry>
         <entry>
             <title>
@@ -62,7 +62,7 @@
                 
             </title>
             <updated>2024-06-07T23:34:45.000Z</updated>
-            <id>https://hoshinorei.github.io/digital-garden/Docker/Docker Swarm/Docker Swarm 删除节点/</id>
+            <id>https://hoshinorei.github.io//digital-garden/Docker/Docker Swarm/Docker Swarm 删除节点/</id>
             <content type="html">
                 &lt;p&gt;在 Node 上&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker swarm leave
@@ -73,6 +73,6 @@
 &lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/klvchen/p/12048981.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;docker swarm 删除节点&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://hoshinorei.github.io/digital-garden/Docker/Docker Swarm/Docker Swarm 删除节点/" >
+            <link href="https://hoshinorei.github.io//digital-garden/Docker/Docker Swarm/Docker Swarm 删除节点/" >
         </entry>
 </feed>
