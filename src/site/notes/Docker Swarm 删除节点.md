@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Docker Swarm 删除节点/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/Docker Swarm 删除节点/"}
 ---
 
 在 Node 上
