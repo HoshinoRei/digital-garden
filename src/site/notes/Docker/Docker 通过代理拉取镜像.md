@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"note/Docker/Docker 通过代理拉取镜像.md","permalink":"/note/Docker/Docker 通过代理拉取镜像/","created":"2024-06-07 21:48:31","updated":"2024-06-07 23:46:55"}
+{"dg-publish":true,"dg-permalink":"note/2","permalink":"/note/2/","created":"2024-06-07 21:48:31","updated":"2024-06-08 01:06:35"}
 ---
 
 编辑 `/etc/docker/daemon.json`
