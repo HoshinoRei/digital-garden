@@ -15,20 +15,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<link href="/digital-garden/styles/digital-garden-base.css" rel="stylesheet">
-<link href="/digital-garden/styles/obsidian-base.css" rel="stylesheet">
-<link href="/digital-garden/styles/_theme.74516f71.css" rel="stylesheet">
-<link href="/digital-garden/styles/custom-style.css" rel="stylesheet">
-<link rel="icon" href="/digital-garden/favicon.ico" sizes="any">
-<link rel="icon" href="/digital-garden/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/digital-garden/apple-touch-icon.png">
-<link rel="manifest" href="/digital-garden/manifest.webmanifest">
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.74516f71.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <style></style>
 </head>
 <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
 <nav class="navbar">
 <div class="navbar-inner">
-<a href="/digital-garden/" style="text-decoration:none">
+<a href="/" style="text-decoration:none">
 <h1 style="margin:15px!important">星野玲的数字花园</h1>
 </a>
 </div>
@@ -58,7 +58,7 @@
 <div class="sidebar">
 <div class="sidebar-container">
 <script>async function fetchGraphData(){var e=await fetch("/graph.json").then(e=>e.json());return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(n,r){const l=Object.values(n).map(e=>e.neighbors).flat();return Object.keys(r).reduce((e,t)=>(-1!=l.indexOf(t)?r[t].hide||(n[t]=r[t]):e[t]=r[t],e),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes));var r,e=JSON.parse(JSON.stringify(e.links)),l=decodeURI(window.location.pathname),l=n[l]||Object.values(n).find(e=>e.home),a=(delete n[l.url],l.home||(r=Object.values(n).find(e=>e.home),delete n[r.url]),l.current=!0,{});a[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(a,n);nodes=Object.values(a);let i=(nodes=l.home?nodes:nodes.filter(e=>!e.home)).map(e=>e.id);return{nodes:nodes,links:e.filter(function(e){return-1<i.indexOf(e.target)&&-1<i.indexOf(e.source)})}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(t,n,r,a){if(null!=t){n=document.getElementById(n);width=n.offsetWidth,height=n.offsetHeight;const i=new Set;let l=null;const o=getCssVar("--graph-main"),u=getCssVar("--graph-muted");let e=ForceGraph()(n).graphData(t).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor(e=>null==l||(e.source.id==l.id||e.target.id==l.id)?o:u).nodeCanvasObject((e,t)=>{var n=e.neighbors&&e.neighbors.length||2,n=Math.min(7,Math.max(n/2,2)),r=(t.beginPath(),t.arc(e.x,e.y,n,0,2*Math.PI,!1),null==l||e==l||i.has(e.url)?t.fillStyle=o:t.fillStyle=u,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,n+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=o,t.stroke()),htmlDecode(e.title));t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(r,e.x,e.y+n+2)}).onNodeClick(e=>{window.location=e.url}).onNodeHover(e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach(e=>i.add(e))),l=e||null});return(a||null!=r&&4<t.nodes.length)&&setTimeout(()=>{e.zoomToFit(5,75)},r||200),e}}function renderLocalGraph(e,t,n){return window.graph&&window.graph._destructor(),renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter(e=>e.hide).map(e=>e.id);return{links:JSON.parse(JSON.stringify(e.links)).filter(e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target)),nodes:[...Object.values(e.nodes).filter(e=>!e.hide)]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
-<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope="">
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
 <div class="graph-title-container">
 <div class="graph-title">Connected Pages</div>
 <div id="graph-controls">
