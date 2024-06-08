@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/6","permalink":"/note/6/","created":"2024-06-08 15:22:48","updated":"2024-06-08 15:42:09"}
+{"dg-publish":true,"dg-permalink":"note/6","permalink":"/note/6/","created":"2024-06-08 15:22:48","updated":"2024-06-08 15:43:39"}
 ---
 
 ## 教程
@@ -15,7 +15,7 @@
 
 ## 提示
 
-光猫管理员账号一般是 `telecomadmin`
+光猫管理员账号一般是 `telecomadmin`。虽说光猫型号可能会不同，但是理论上是可以通过这个教程获取管理员密码的。
 ## 参考
 
 1. [电信天翼网关TEWA-1000E/G等系列光猫破解超级密码](http://freevon.net/topic.asp?ID=31)
