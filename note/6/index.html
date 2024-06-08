@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题</title>
+<title>电信 TEWA-769E 光猫获取管理员密码</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -109,13 +109,13 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/5/">如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/5/">如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题 </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/6/">电信 TEWA-769E 光猫获取管理员密码 </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/6/">电信 TEWA-769E 光猫获取管理员密码 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
@@ -204,20 +204,28 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题</h1>
+<h1 data-note-icon="">电信 TEWA-769E 光猫获取管理员密码</h1>
 <div class="header-meta">
 <div class="header-tags">
-<a class="tag" onclick="toggleTagSearch(this)">
-#Obsidian
-</a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-08 06:30:24"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 07:00:30"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-08 15:22:48"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 15:42:09"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/note/3/">Obsidian</a> 的 <a class="internal-link" target="" data-note-icon="" href="/note/4/">Digital Garden</a> 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？</p>
-<p>其实里面的很多主题都是参考 <a class="internal-link" target="" data-note-icon="" href="/note/3/">Obsidian</a> 本身的主题而制作的，咱们只需要在 <a class="internal-link" target="" data-note-icon="" href="/note/3/">Obsidian</a> 的主题市场里挑一个自己喜欢的，然后再到 <a class="internal-link" target="" data-note-icon="" href="/note/4/">Digital Garden</a> 插件的列表里找到同名的主题就可以了。但是这个方法只适合两边都有的情况，如果有一边没有就只能自己应用主题看看效果了。</p>
+<h2 id="教程" tabindex="-1">教程</h2>
+<ol>
+<li>准备一个 U 盘，格式化成 FAT32 格式，插入光猫的 USB 口</li>
+<li>打开 <a href="http://192.168.1.1:8080" target="_blank" class="external-link">http://192.168.1.1:8080</a>，通过光猫背面的账号密码登录，默认用户名应该是 <code>useradmin</code></li>
+<li>打开 <a href="http://192.168.1.1:8080/MD_Device_user.html" target="_blank" class="external-link">设备管理</a>，在浏览器控制台的 Elements 中搜索 <code>set3_sessionKey</code> 并记下</li>
+<li>将 <code>sessionKey</code> 添加到 <code>http://192.168.1.1:8080/usbbackup.cmd?action=backupeble&amp;set3_sessionKey=</code> 尾部并打开</li>
+<li>禁用 <code>快速恢复</code>，点击 <code>备份配置</code></li>
+<li>拔下 U 盘并插入电脑，此时 U 盘根目录应该多了个 <code>e8_Config_Backup</code> 文件夹</li>
+<li>打开 <a href="http://freevon.net/jm/" target="_blank" class="external-link">http://freevon.net/jm/</a>，配置文件选择 <code>e8_Config_Backup</code> 文件夹中的 <code>ctce8_TEWA-769E.cfg</code> 并转换</li>
+<li>搜索 <code>TeleComAccount</code>，如果附近有被 <code>&lt;Password&gt;</code> 包裹的字符串则该字符串就是光猫管理员密码</li>
+</ol>
+<h2 id="提示" tabindex="-1">提示</h2>
+<p>光猫管理员账号一般是 <code>telecomadmin</code></p>
 <h2 id="参考" tabindex="-1">参考</h2>
 <ol>
-<li><a href="https://github.com/oleeskild/obsidian-digital-garden/issues/310" target="_blank" class="external-link">How do I preview the theme?</a></li>
+<li><a href="http://freevon.net/topic.asp?ID=31" target="_blank" class="external-link">电信天翼网关TEWA-1000E/G等系列光猫破解超级密码</a></li>
 </ol>
 <script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
@@ -261,6 +269,10 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
+<li><a href="#教程">教程</a>
+</li>
+<li><a href="#提示">提示</a>
+</li>
 <li><a href="#参考">参考</a>
 </li>
 </ol>
