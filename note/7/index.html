@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>Docker 通过代理拉取镜像</title>
+<title>Excel 创建下拉列表</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -88,7 +88,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/2/">Docker 通过代理拉取镜像 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/2/">Docker 通过代理拉取镜像 </a>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ CTRL + K
 <span class="foldername">Excel</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/7/">Excel 创建下拉列表 </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/7/">Excel 创建下拉列表 </a>
 </div>
 </div>
 </div>
@@ -217,41 +217,13 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Docker 通过代理拉取镜像</h1>
+<h1 data-note-icon="">Excel 创建下拉列表</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-07 21:48:31"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 05:21:29"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-09 18:11:19"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-09 18:13:02"></span></div></div></div>
 </header>
-<p>编辑 <code>/etc/docker/daemon.json</code></p>
-<pre><code class="language-bash">sudo vim /etc/docker/daemon.json
-</code></pre>
-<p>写入</p>
-<pre><code class="language-json">{
- &quot;proxies&quot;: {
-   &quot;default&quot;: {
-     &quot;httpProxy&quot;: &quot;http://:&quot;,
-     &quot;httpsProxy&quot;: &quot;http://&quot;,
-     &quot;noProxy&quot;: &quot;&quot;
-   }
- }
-}
-</code></pre>
-<p>示例</p>
-<pre><code class="language-json">{
- &quot;proxies&quot;: {
-   &quot;default&quot;: {
-     &quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,
-     &quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,
-     &quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;
-   }
- }
-}
-</code></pre>
-<h2 id="参考" tabindex="-1">参考</h2>
-<ol>
-<li><a href="https://docs.docker.com/network/proxy/#configure-the-docker-client" target="_blank" class="external-link">Configure the Docker client</a></li>
-</ol>
+<p><a href="https://support.microsoft.com/zh-cn/office/%E5%88%9B%E5%BB%BA%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8-7693307a-59ef-400a-b769-c5402dce407b" target="_blank" class="external-link">创建下拉列表</a></p>
 <script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
 <aside>
@@ -283,21 +255,6 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-</div>
-</div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#参考">参考</a>
-</li>
-</ol>
-</nav>
 </div>
 </div>
 <div class="backlinks">
