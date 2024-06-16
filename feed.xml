@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-16T16:33:47Z</updated>
+    <updated>2024-06-16T16:35:18Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -149,8 +149,9 @@
             <updated>2024-06-17T00:27:32.000Z</updated>
             <id>https://digital-garden.bling.moe/note/11/</id>
             <content type="html">
-                &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=y0bYVpkXfqE&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;视频教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;文字教程&lt;/p&gt;
+                &lt;h2 id=&quot;视频教程&quot; tabindex=&quot;-1&quot;&gt;视频教程&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=y0bYVpkXfqE&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;视频教程&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;文字教程&quot; tabindex=&quot;-1&quot;&gt;文字教程&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;用 PS 打开图片，对图层连按两次 Ctrl + J，复制出两个同样的图层，然后把原图的眼睛关闭，作为备用&lt;/li&gt;
 &lt;li&gt;选择最上面的图层&lt;/li&gt;
