@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-16T16:29:39Z</updated>
+    <updated>2024-06-16T16:33:47Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -156,7 +156,7 @@
 &lt;li&gt;选择最上面的图层&lt;/li&gt;
 &lt;li&gt;按 W 选择 &lt;code&gt;快速选择工具&lt;/code&gt;，单机选项栏的 &lt;code&gt;选择主体&lt;/code&gt; 按钮，就能基本选中人物图像。&lt;/li&gt;
 &lt;li&gt;选区调整好后，点击右下角的 &lt;code&gt;添加图层蒙版&lt;/code&gt; 图标。&lt;/li&gt;
-&lt;li&gt;关闭最上面的人物图层的眼睛，选择它下面的图层。按住 Ctrl 单机蒙版，就重新选中了人物的选区。&lt;/li&gt;
+&lt;li&gt;关闭最上面的人物图层的眼睛，选择它下面的图层。按住 Ctrl 单击蒙版，就重新选中了人物的选区。&lt;/li&gt;
 &lt;li&gt;点击菜单中的 &lt;code&gt;选择&lt;/code&gt; &amp;gt; &lt;code&gt;修改&lt;/code&gt; &amp;gt; &lt;code&gt;扩展&lt;/code&gt;，&lt;code&gt;扩展量&lt;/code&gt; 为 &lt;code&gt;5&lt;/code&gt; 个像素，确定。&lt;/li&gt;
 &lt;li&gt;按 SHIFT + BACKSPACE 弹出填充对话框，&lt;code&gt;内容&lt;/code&gt; 为 &lt;code&gt;内容识别&lt;/code&gt;，确定。&lt;/li&gt;
 &lt;li&gt;CTRL + D 取消选区。&lt;/li&gt;
