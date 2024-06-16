@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-09T18:29:54Z</updated>
+    <updated>2024-06-16T16:03:52Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -72,7 +72,8 @@
             <updated>2024-06-08T07:00:30.000Z</updated>
             <id>https://digital-garden.bling.moe/note/5/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/3/&quot;&gt;Obsidian&lt;/a&gt; 的 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/4/&quot;&gt;Digital Garden&lt;/a&gt; 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？&lt;/p&gt;
+                &lt;h2 id=&quot;教程&quot; tabindex=&quot;-1&quot;&gt;教程&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/3/&quot;&gt;Obsidian&lt;/a&gt; 的 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/4/&quot;&gt;Digital Garden&lt;/a&gt; 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？&lt;/p&gt;
 &lt;p&gt;其实里面的很多主题都是参考 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/3/&quot;&gt;Obsidian&lt;/a&gt; 本身的主题而制作的，咱们只需要在 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/3/&quot;&gt;Obsidian&lt;/a&gt; 的主题市场里挑一个自己喜欢的，然后再到 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/4/&quot;&gt;Digital Garden&lt;/a&gt; 插件的列表里找到同名的主题就可以了。但是这个方法只适合两边都有的情况，如果有一边没有就只能自己应用主题看看效果了。&lt;/p&gt;
 &lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
 &lt;ol&gt;
