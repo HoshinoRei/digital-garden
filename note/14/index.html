@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>首页</title>
+<title>通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -156,7 +156,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/14/">通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/14/">通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT </a>
 </div>
 </div>
 </div>
@@ -214,7 +214,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">首页 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">首页 </a>
 </div>
 </div>
 </div>
@@ -299,17 +299,26 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1></h1>
+<h1 data-note-icon="">通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT</h1>
 <div class="header-meta">
 <div class="header-tags">
 </div>
-</div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-20 05:37:10"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-20 05:41:55"></span></div></div></div>
 </header>
-<p>这只是一个用来占位的首页。</p>
-<ul>
-<li><a href="https://digital-garden.bling.moe/feed.xml" target="_blank" class="external-link">RSS</a></li>
-<li><a href="https://digital-garden.bling.moe/sitemap.xml" target="_blank" class="external-link">Sitemap</a></li>
-</ul>
+<ol>
+<li>添加仓库</li>
+</ol>
+<pre><code class="language-powershell">scoop bucket add scoopet https://github.com/ivaquero/scoopet
+</code></pre>
+<ol start="2">
+<li>安装 <code>qq-nt</code></li>
+</ol>
+<pre><code class="language-powershell">scoop install scoopet/qq-nt
+</code></pre>
+<ol start="3">
+<li>下载并执行 <a href="https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases/latest/download/install_windows.exe" target="_blank" class="external-link">LiteLoaderQQNT_Install</a></li>
+</ol>
+<script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
 <aside>
 <div class="sidebar">
@@ -359,6 +368,9 @@ CTRL + K
 <iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
 </iframe>
 <script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout(function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout(function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"},transitionDurationMs+1)},transitionDurationMs)}function showTooltip(t){var e=t.target,e=e.getClientRects()[e.getClientRects().length-1],o=window.pageYOffset||document.documentElement.scrollTop,i=t.target.getAttribute("href");if(-1===i.indexOf("http")||-1!==i.indexOf(window.location.host)){let t=i.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout(function(){var t;-(tooltipWrapper.style.opacity=1)!=i.indexOf("#")?(t=i.split("#")[1],(t=tooltipWrapper.querySelector(`[id='${t}']`)).classList.add("referred"),t.scrollIntoView({behavior:"smooth"},!0)):tooltipWrapper.scroll(0,0)},1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml=(tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>")+iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout(function(){var t;-(tooltipWrapper.style.opacity=1)!=i.indexOf("#")?(t=i.split("#")[1],(t=tooltipWrapper.querySelector(`[id='${t}']`)).classList.add("referred"),console.log(t),t.scrollIntoView({behavior:"smooth"},!0)):tooltipWrapper.scroll(0,0)},1)}),tooltipWrapper.style.left=e.left-tooltipWrapper.offsetWidth/2+e.width/2+"px",window.innerHeight-e.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=e.top+o-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-e.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=e.top+o+35+"px"),e.left+e.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-e.left-e.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",function(t){hideTooltip()}),tooltipWrapper.addEventListener("mouseleave",function(t){hideTooltip()}),t.addEventListener("mouseenter",function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)}),tooltipWrapper.addEventListener("mouseenter",function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)})}window.addEventListener("load",function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)})</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="yyyy-LL-dd hh:mm:ss",document.querySelectorAll(".human-date").forEach(function(e){date=e.getAttribute("data-date")||e.innerText,null!=(parsed_date=null!=(parsed_date=luxon.DateTime.fromISO(date)).invalid?luxon.DateTime.fromSQL(date):parsed_date).invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)})</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>

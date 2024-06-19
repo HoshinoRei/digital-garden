@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-19T21:33:19Z</updated>
+    <updated>2024-06-19T21:42:25Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -127,6 +127,31 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/9/" >
+        </entry>
+        <entry>
+            <title>
+                通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT
+                
+            </title>
+            <updated>2024-06-20T05:41:55.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/14/</id>
+            <content type="html">
+                &lt;ol&gt;
+&lt;li&gt;添加仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;scoop bucket add scoopet https://github.com/ivaquero/scoopet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;安装 &lt;code&gt;qq-nt&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;scoop install scoopet/qq-nt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;下载并执行 &lt;a href=&quot;https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases/latest/download/install_windows.exe&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;LiteLoaderQQNT_Install&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/14/" >
         </entry>
         <entry>
             <title>
