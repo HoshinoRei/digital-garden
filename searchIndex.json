@@ -1,7 +1,7 @@
 [
 {
 		"title": "Docker Swarm 删除节点",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/1/",
 		"content": "在 Node 上\ndocker swarm leave\n\n在 Manager 上\ndocker node rm &lt;node_name&gt;\n\n参考\n\ndocker swarm 删除节点",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Docker 通过代理拉取镜像",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/2/",
 		"content": "编辑 /etc/docker/daemon.json\nsudo vim /etc/docker/daemon.json\n\n写入\n{\n&quot;proxies&quot;: {\n&quot;default&quot;: {\n&quot;httpProxy&quot;: &quot;http://:&quot;,\n&quot;httpsProxy&quot;: &quot;http://&quot;,\n&quot;noProxy&quot;: &quot;&quot;\n}\n}\n}\n\n示例\n{\n&quot;proxies&quot;: {\n&quot;default&quot;: {\n&quot;httpProxy&quot;: &quot;http://proxy.example.com:3128&quot;,\n&quot;httpsProxy&quot;: &quot;https://proxy.example.com:3129&quot;,\n&quot;noProxy&quot;: &quot;*.test.example.com,.example.org,127.0.0.0/8&quot;\n}\n}\n}\n\n参考\n\nConfigure the Docker client",
 		"tags": [ "note"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Excel 创建下拉列表",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/7/",
 		"content": "创建下拉列表",
 		"tags": [ "note"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "Digital Garden",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/4/",
 		"content": "Obsidian 插件链接\nGithub\n文档",
 		"tags": [ "note","Obsidian"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "Obsidian",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/3/",
 		"content": "Obsidian",
 		"tags": [ "note","Obsidian"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/5/",
 		"content": "教程\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 的 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/4/\">Digital Garden</a> 插件里有琳琅满目的主题，但是又没有预览图。如何在众多主题中找到一个自己喜欢的呢？\n其实里面的很多主题都是参考 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 本身的主题而制作的，咱们只需要在 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/3/\">Obsidian</a> 的主题市场里挑一个自己喜欢的，然后再到 <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/note/4/\">Digital Garden</a> 插件的列表里找到同名的主题就可以了。但是这个方法只适合两边都有的情况，如果有一边没有就只能自己应用主题看看效果了。\n参考\n\nHow do I preview the theme?",
 		"tags": [ "note","Obsidian"]
@@ -49,7 +49,7 @@
 
 {
 		"title": "背景虚化",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/11/",
 		"content": "视频教程\n视频教程\n文字教程\n\n用 PS 打开图片，对图层连按两次 Ctrl + J，复制出两个同样的图层，然后把原图的眼睛关闭，作为备用\n选择最上面的图层\n按 W 选择 快速选择工具，单机选项栏的 选择主体 按钮，就能基本选中人物图像。\n选区调整好后，点击右下角的 添加图层蒙版 图标。\n关闭最上面的人物图层的眼睛，选择它下面的图层。按住 Ctrl 单击蒙版，就重新选中了人物的选区。\n点击菜单中的 选择 &gt; 修改 &gt; 扩展，扩展量 为 5 个像素，确定。\n按 SHIFT + BACKSPACE 弹出填充对话框，内容 为 内容识别，确定。\nCTRL + D 取消选区。\n打开最上面的图层的眼睛。\n右击最上面的图层的下面那个图层，选择 转换为智能对象。\n点击菜单中的 滤镜 &gt; 模糊 &gt; 高斯模糊，半径 根据你想要的模糊度来调整，确定。\n因为是智能滤镜，如果模糊度没设置好，还可以在图层附近找到滤镜调整。",
 		"tags": [ "note"]
@@ -57,15 +57,23 @@
 
 {
 		"title": "Steam API",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/8/",
 		"content": "Steam Web API Documentation",
 		"tags": [ "note"]
 },
 
 {
+		"title": "Scoop 便携应用仓库",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
+		"url":"/note/13/",
+		"content": "仓库地址\nScoop-Portapps\n添加方式\nscoop bucket add Portapps https://github.com/Velgus/Scoop-Portapps.git",
+		"tags": [ "note"]
+},
+
+{
 		"title": "Windows 启动文件夹位置",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/12/",
 		"content": "用户\n%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\n\n系统\nC:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
 		"tags": [ "note"]
@@ -73,7 +81,7 @@
 
 {
 		"title": "Nightcore → Normal",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/9/",
 		"content": "Nightcore → Normal (Lyrics)\nThink I drank too much again 我想自己又喝多了\nLooks like fun but it's pretend 虽然看起来很开心，不过这都是装出来的\nWhy do I try to fit in 为什么我要试着去适应这些\nWhen I just wanna go home 我明明就只想回家睡个觉\nAnd I know this isn't like me 而我很清楚这不像我\nI just want people to like me 我只是想让别人也喜欢我\nGot my glass up in the air 将酒杯高高的举向空中\nAnd I act like I don't care 表现得像自己根本不在乎一样\nAnd I take some, but I shouldn't 我喝了一点酒，但我根本不该这样\nAnd I say things that I wouldn't 我说了一些话，但我根本不曾说过那些词\nAnd I'm just part of the crowd 我完完全全成了人群中的一份子\nBut I feel better now so 但我现在不再那么难受，所以……\nKeep on playing that song that I don't like 继续听着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nKeep on kissing that guy that's not my type 继续吻着那个我不怎么喜欢的人\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nI should go, it's getting late 我早该走了，时间已经越来越晚\nBut I'ma keep on dancing 'till I feel okay 但我还是继续跳着舞，继续寻求着一点安慰\nSo keep on playing that song that I don't like 所以继续唱着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像普通人一样享受这个夜晚\nTaking pictures in the dark 在黑暗中为自己拍张自拍照\nSmoke it up 'till I can't talk 抽着一根根烟一直到自己喘不过气为止\nFooled myself, almost forgot 就这样麻醉自己，差点就忘记\nThat I just wanna go home 其实我只想回家好好睡个觉\nAnd I know this isn't like me 而我很清楚这不像我\nI just want people to like me 我只是想让别人也喜欢我\nGot my glass up in the air 将酒杯高高的举向空中\nAnd I act like I don't care 表现得像自己根本不在乎一样\nAnd I take some, but I shouldn't 我喝了一点酒，但我根本不该这样\nAnd I say things that I wouldn't 我说了一些话，但我根本不曾说过那些词\nAnd I'm just part of the crowd 我完完全全成了人群中的一份子\nBut I feel better now so 但我现在不再那么难受，所以……\nKeep on playing that song that I don't like 继续听着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nKeep on kissing that guy that's not my type 继续吻着那个我不怎么喜欢的人\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nI should go, it's getting late 我早该走了，时间已经越来越晚\nBut I'ma keep on dancing 'till I feel okay 但我还是继续跳着舞，继续寻求着一点安慰\nSo keep on playing that song that I don't like 所以继续唱着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nI just wanna feel normal 我只是想像个正常人\nKeep on playing that song that I don't like 继续听着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nKeep on kissing that guy that's not my type 继续吻着那个我不怎么喜欢的人\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚\nI should go, it's getting late 我早该走了，时间已经越来越晚\nBut I'ma keep on dancing 'till I feel okay 但我还是继续跳着舞，继续寻求着一点安慰\nSo keep on playing that song that I don't like 所以继续唱着那首我不怎么喜欢的歌\nI just wanna feel normal for the night 我只是想像个普通人一样享受这个夜晚",
 		"tags": [ "note"]
@@ -81,7 +89,7 @@
 
 {
 		"title": "Minecraft 基岩版存档位置",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/10/",
 		"content": "%USERPROFILE%\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\minecraftWorlds",
 		"tags": [ "note"]
@@ -89,7 +97,7 @@
 
 {
 		"title": "电信 TEWA-769E 光猫获取管理员密码",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/note/6/",
 		"content": "教程\n\n准备一个 U 盘，格式化成 FAT32 格式，插入光猫的 USB 口\n打开 http://192.168.1.1:8080，通过光猫背面的账号密码登录，默认用户名应该是 useradmin\n打开 设备管理，在浏览器控制台的 Elements 中搜索 set3_sessionKey 并记下\n将 sessionKey 添加到 http://192.168.1.1:8080/usbbackup.cmd?action=backupeble&amp;set3_sessionKey= 尾部并打开\n禁用 快速恢复，点击 备份配置\n拔下 U 盘并插入电脑，此时 U 盘根目录应该多了个 e8_Config_Backup 文件夹\n打开 http://freevon.net/jm/，配置文件选择 e8_Config_Backup 文件夹中的 ctce8_TEWA-769E.cfg 并转换\n搜索 TeleComAccount，如果附近有被 &lt;Password&gt; 包裹的字符串则该字符串就是光猫管理员密码\n\n提示\n光猫管理员账号一般是 telecomadmin。虽说光猫型号可能会不同，但是理论上是可以通过这个教程获取管理员密码的。\n参考\n\n电信天翼网关TEWA-1000E/G等系列光猫破解超级密码",
 		"tags": [ "note"]
@@ -97,7 +105,7 @@
 
 {
 		"title": "首页",
-		"date":"Wed Jun 19 2024 21:20:47 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Jun 19 2024 21:30:16 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "这只是一个用来占位的首页。\n\nRSS\nSitemap",
 		"tags": [ "note","gardenEntry"]

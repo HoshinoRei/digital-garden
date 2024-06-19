@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-19T21:20:55Z</updated>
+    <updated>2024-06-19T21:30:24Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -145,6 +145,23 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/12/" >
+        </entry>
+        <entry>
+            <title>
+                Scoop 便携应用仓库
+                
+            </title>
+            <updated>2024-06-20T05:29:04.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/13/</id>
+            <content type="html">
+                &lt;h2 id=&quot;仓库地址&quot; tabindex=&quot;-1&quot;&gt;仓库地址&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Velgus/Scoop-Portapps&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Scoop-Portapps&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;添加方式&quot; tabindex=&quot;-1&quot;&gt;添加方式&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;scoop bucket add Portapps https://github.com/Velgus/Scoop-Portapps.git
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/13/" >
         </entry>
         <entry>
             <title>
