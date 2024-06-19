@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-16T17:04:39Z</updated>
+    <updated>2024-06-19T21:20:55Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -127,6 +127,24 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/9/" >
+        </entry>
+        <entry>
+            <title>
+                Windows 启动文件夹位置
+                
+            </title>
+            <updated>2024-06-20T05:18:20.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/12/</id>
+            <content type="html">
+                &lt;h2 id=&quot;用户&quot; tabindex=&quot;-1&quot;&gt;用户&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;%APPDATA%&#92;Microsoft&#92;Windows&#92;Start Menu&#92;Programs&#92;Startup
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;系统&quot; tabindex=&quot;-1&quot;&gt;系统&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;C:&#92;ProgramData&#92;Microsoft&#92;Windows&#92;Start Menu&#92;Programs&#92;Startup
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/12/" >
         </entry>
         <entry>
             <title>
