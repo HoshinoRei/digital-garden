@@ -9,5 +9,5 @@
 ## 添加方式
 
 ```powershell
-scoop bucket add Portapps https://github.com/Velgus/Scoop-Portapps.git
+scoop bucket add Portapps https://github.com/Velgus/Scoop-Portapps
 ```
