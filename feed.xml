@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-29T10:19:44Z</updated>
+    <updated>2024-06-29T10:22:47Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -130,6 +130,19 @@
         </entry>
         <entry>
             <title>
+                查看 OpenAI 账号的 access token
+                
+            </title>
+            <updated>2024-06-23T11:00:30.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/15/</id>
+            <content type="html">
+                &lt;p&gt;打开 &lt;a href=&quot;https://chatgpt.com/api/auth/session&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;这个地址&lt;/a&gt; 即可&lt;/p&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/15/" >
+        </entry>
+        <entry>
+            <title>
                 通过 Scoop 安装 QQNT 并添加 LiteLoaderQQNT
                 
             </title>
@@ -170,6 +183,27 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/12/" >
+        </entry>
+        <entry>
+            <title>
+                Windows 关闭现代待机的联网
+                
+            </title>
+            <updated>2024-06-29T18:19:07.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/16/</id>
+            <content type="html">
+                &lt;h2 id=&quot;教程&quot; tabindex=&quot;-1&quot;&gt;教程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在注册表编辑器中将&lt;code&gt;HKEY_LOCAL_MACHINE&#92;SYSTEM&#92;CurrentControlSet&#92;Control&#92;Power&#92;PowerSettings&#92;f15576e8-98b7-4186-b944-eafa664402d9&#92;Attributes&lt;/code&gt; 的值从 &lt;code&gt;1&lt;/code&gt; 改为 &lt;code&gt;2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;控制面板&lt;/code&gt; &amp;gt; &lt;code&gt;电源选项&lt;/code&gt; &amp;gt; &lt;code&gt;更改计划设置&lt;/code&gt; &amp;gt; &lt;code&gt;更改高级电源设置&lt;/code&gt; &amp;gt; &lt;code&gt;待机状态下的网络连接性&lt;/code&gt; 中，把 &lt;code&gt;使用电池&lt;/code&gt; 和 &lt;code&gt;接通电源&lt;/code&gt; 都禁用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://nekosc.com/technology/modify_s0.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;修改 Windows S0 待机状态下的设置&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/16/" >
         </entry>
         <entry>
             <title>
@@ -248,27 +282,6 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/5/" >
-        </entry>
-        <entry>
-            <title>
-                Windows 关闭现代待机的联网
-                
-            </title>
-            <updated>2024-06-29T18:19:07.000Z</updated>
-            <id>https://digital-garden.bling.moe/note/16/</id>
-            <content type="html">
-                &lt;h2 id=&quot;教程&quot; tabindex=&quot;-1&quot;&gt;教程&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;在注册表编辑器中将&lt;code&gt;HKEY_LOCAL_MACHINE&#92;SYSTEM&#92;CurrentControlSet&#92;Control&#92;Power&#92;PowerSettings&#92;f15576e8-98b7-4186-b944-eafa664402d9&#92;Attributes&lt;/code&gt; 的值从 &lt;code&gt;1&lt;/code&gt; 改为 &lt;code&gt;2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;在 &lt;code&gt;控制面板&lt;/code&gt; &amp;gt; &lt;code&gt;电源选项&lt;/code&gt; &amp;gt; &lt;code&gt;更改计划设置&lt;/code&gt; &amp;gt; &lt;code&gt;更改高级电源设置&lt;/code&gt; &amp;gt; &lt;code&gt;待机状态下的网络连接性&lt;/code&gt; 中，把 &lt;code&gt;使用电池&lt;/code&gt; 和 &lt;code&gt;接通电源&lt;/code&gt; 都禁用&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://nekosc.com/technology/modify_s0.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;修改 Windows S0 待机状态下的设置&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-            </content>
-            <link href="https://digital-garden.bling.moe/note/16/" >
         </entry>
         <entry>
             <title>
