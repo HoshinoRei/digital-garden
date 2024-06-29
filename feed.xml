@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-06-29T10:19:42Z</updated>
+    <updated>2024-06-29T10:19:44Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -127,19 +127,6 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/9/" >
-        </entry>
-        <entry>
-            <title>
-                查看 OpenAI 账号的 access token
-                
-            </title>
-            <updated>2024-06-23T11:00:30.000Z</updated>
-            <id>https://digital-garden.bling.moe/note/15/</id>
-            <content type="html">
-                &lt;p&gt;打开 &lt;a href=&quot;https://chatgpt.com/api/auth/session&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;这个地址&lt;/a&gt; 即可&lt;/p&gt;
-
-            </content>
-            <link href="https://digital-garden.bling.moe/note/15/" >
         </entry>
         <entry>
             <title>
