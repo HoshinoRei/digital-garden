@@ -13,7 +13,7 @@ env:
 jobs:
   build:
     concurrency:
-      group: build-${{ github.ref }}
+      group: ${{ github.workflow }}-${{ github.ref }}
     runs-on: ubuntu-22.04
 
     strategy:
