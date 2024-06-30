@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/2","permalink":"/note/2/","created":"2024-06-07 21:48:31","updated":"2024-06-08 05:21:29"}
+{"dg-publish":true,"dg-permalink":"note/2","permalink":"/note/2/","tags":["Docker"],"created":"2024-06-07 21:48:31","updated":"2024-06-30 10:51:52"}
 ---
 
 编辑 `/etc/docker/daemon.json`
