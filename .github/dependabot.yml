@@ -5,6 +5,13 @@
 
 version: 2
 updates:
+  - package-ecosystem: github-actions
+    commit-message:
+      prefix: ci(Github Actions)
+    directory: /
+    open-pull-requests-limit: 1000
+    schedule:
+      interval: daily
   - package-ecosystem: "npm" # See documentation for possible values
     commit-message:
       prefix: build(npm)
