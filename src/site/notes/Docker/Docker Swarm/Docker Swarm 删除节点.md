@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/1","permalink":"/note/1/","created":"2024-06-07 21:41:09","updated":"2024-06-08 05:20:02"}
+{"dg-publish":true,"dg-permalink":"note/1","permalink":"/note/1/","tags":["Docker","DockerSwarm"],"created":"2024-06-07 21:41:09","updated":"2024-06-30 10:51:39"}
 ---
 
 在 Node 上
