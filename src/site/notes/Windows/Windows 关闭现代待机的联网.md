@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/16","permalink":"/note/16/","created":"2024-06-29 18:13:50","updated":"2024-06-29 18:19:07"}
+{"dg-publish":true,"dg-permalink":"note/16","permalink":"/note/16/","tags":["Windows"],"created":"2024-06-29 18:13:50","updated":"2024-06-30 14:00:06"}
 ---
 
 ## 教程
