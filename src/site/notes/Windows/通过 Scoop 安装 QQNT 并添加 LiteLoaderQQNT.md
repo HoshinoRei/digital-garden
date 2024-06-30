@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/14","permalink":"/note/14/","created":"2024-06-20 05:37:10","updated":"2024-06-20 05:41:55"}
+{"dg-publish":true,"dg-permalink":"note/14","permalink":"/note/14/","tags":["Windows","Scoop"],"created":"2024-06-20 05:37:10","updated":"2024-06-30 14:00:25"}
 ---
 
 1. 添加仓库
