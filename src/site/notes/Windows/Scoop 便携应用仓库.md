@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/13","permalink":"/note/13/","created":"2024-06-20 05:27:44","updated":"2024-06-20 05:29:04"}
+{"dg-publish":true,"dg-permalink":"note/13","permalink":"/note/13/","tags":["Windows","Scoop"],"created":"2024-06-20 05:27:44","updated":"2024-06-30 13:59:56"}
 ---
 
 ## 仓库地址
