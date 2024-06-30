@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>Digital Garden</title>
+<title>ImmortalWrt 更改默认 shell 为 bash</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -123,7 +123,7 @@ CTRL + K
 <span class="foldername">Openwrt</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/19/">ImmortalWrt 更改默认 shell 为 bash </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/19/">ImmortalWrt 更改默认 shell 为 bash </a>
 </div>
 </div>
 </div>
@@ -138,7 +138,7 @@ CTRL + K
 <span class="foldername">Obsidian</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/4/">Digital Garden </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/4/">Digital Garden </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -331,18 +331,28 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Digital Garden</h1>
+<h1 data-note-icon="">ImmortalWrt 更改默认 shell 为 bash</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Obsidian
+#Linux
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Openwrt
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#ImmortalWrt
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-08 06:38:12"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-08 07:00:20"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-30 11:12:40"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-30 11:17:30"></span></div></div></div>
 </header>
-<p><a href="obsidian://show-plugin?id=digitalgarden" target="_blank" class="external-link">Obsidian 插件链接</a><br>
-<a href="https://github.com/oleeskild/obsidian-digital-garden" target="_blank" class="external-link">Github</a><br>
-<a href="https://dg-docs.ole.dev" target="_blank" class="external-link">文档</a></p>
+<h2 id="教程" tabindex="-1">教程</h2>
+<p>ImmortalWrt 的默认 shell 是 ash，现在要更改为 bash。</p>
+<p>执行以下命令：</p>
+<pre><code class="language-ash">sed -e 's,root:x:0:0:root:/root:/bin/ash,root:x:0:0:root:/root:/bin/bash,g' -i /etc/passwd
+</code></pre>
+<h2 id="参考" tabindex="-1">参考</h2>
+<p>1.<a href="https://www.openwrt.pro/post-598.html" target="_blank" class="external-link">更换openwrt shell解析器为bash,解决history不保存问题</a></p>
 <script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
 <aside>
@@ -376,9 +386,27 @@ CTRL + K
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#教程">教程</a>
+</li>
+<li><a href="#参考">参考</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/note/5/" data-note-icon="" class="backlink">如何给 Obsidian 的 Digital Garden 插件选择一个好看的主题</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
