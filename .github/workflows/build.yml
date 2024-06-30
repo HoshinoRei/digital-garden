@@ -12,7 +12,8 @@ env:
   DOMAIN: digital-garden.bling.moe
 jobs:
   build:
-
+    concurrency:
+      group: build-${{ github.ref }}
     runs-on: ubuntu-22.04
 
     strategy:
