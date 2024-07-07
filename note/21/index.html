@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<title>Scoop 便携应用仓库</title>
+<title>国内无法访问 Docker 一键安装脚本的解决方法</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -123,7 +123,7 @@ CTRL + K
 <span class="foldername">Docker</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/21/">国内无法访问 Docker 一键安装脚本的解决方法 </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/21/">国内无法访问 Docker 一键安装脚本的解决方法 </a>
 </div>
 </div>
 </div>
@@ -198,7 +198,7 @@ CTRL + K
 <span class="foldername">Windows</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/13/">Scoop 便携应用仓库 </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/note/13/">Scoop 便携应用仓库 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -357,22 +357,24 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Scoop 便携应用仓库</h1>
+<h1 data-note-icon="">国内无法访问 Docker 一键安装脚本的解决方法</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Windows
+#Linux
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#Scoop
+#Docker
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-06-20 05:27:44"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-06-30 13:59:56"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-07-07 12:54:11"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-07-07 12:54:14"></span></div></div></div>
 </header>
-<h2 id="仓库地址" tabindex="-1">仓库地址</h2>
-<p><a href="https://github.com/Velgus/Scoop-Portapps" target="_blank" class="external-link">Scoop-Portapps</a></p>
-<h2 id="添加方式" tabindex="-1">添加方式</h2>
-<pre><code class="language-powershell">scoop bucket add Portapps https://github.com/Velgus/Scoop-Portapps
+<p>Docker 的一键安装脚本的域名 <code>get.docker.com</code> 无法访问了怎么办？</p>
+<pre><code class="language-bash">root@debian:~# curl -fsSL https://get.docker.com | bash
+curl: (35) Recv failure: Connection reset by peer
+</code></pre>
+<p>其实，这个脚本在 Github 上有个仓库，只要访问仓库里脚本的下载地址就好了。</p>
+<pre><code class="language-bash">curl -fsSL https://raw.githubusercontent.com/docker/docker-install/master/install.sh | bash
 </code></pre>
 <script src="https://giscus.app/client.js" data-repo="HoshinoRei/digital-garden" data-repo-id="R_kgDOMGRr8w" data-category-id="DIC_kwDOMGRr884Cf78x" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
@@ -405,23 +407,6 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-</div>
-</div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#仓库地址">仓库地址</a>
-</li>
-<li><a href="#添加方式">添加方式</a>
-</li>
-</ol>
-</nav>
 </div>
 </div>
 <div class="backlinks">

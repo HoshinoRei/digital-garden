@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-07-07T04:32:43Z</updated>
+    <updated>2024-07-07T05:35:48Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -350,6 +350,25 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/19/" >
+        </entry>
+        <entry>
+            <title>
+                国内无法访问 Docker 一键安装脚本的解决方法
+                
+            </title>
+            <updated>2024-07-07T12:54:14.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/21/</id>
+            <content type="html">
+                &lt;p&gt;Docker 的一键安装脚本的域名 &lt;code&gt;get.docker.com&lt;/code&gt; 无法访问了怎么办？&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;root@debian:~# curl -fsSL https://get.docker.com | bash
+curl: (35) Recv failure: Connection reset by peer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其实，这个脚本在 Github 上有个仓库，只要访问仓库里脚本的下载地址就好了。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;curl -fsSL https://raw.githubusercontent.com/docker/docker-install/master/install.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/21/" >
         </entry>
         <entry>
             <title>
