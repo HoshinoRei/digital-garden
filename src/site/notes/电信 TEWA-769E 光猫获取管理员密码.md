@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/6","permalink":"/note/6/","created":"2024-06-08 15:22:48","updated":"2024-06-08 15:43:39"}
+{"dg-publish":true,"dg-permalink":"note/6","permalink":"/note/6/","created":"2024-06-08 15:22:48","updated":"2024-06-08 15:55:25"}
 ---
 
 ## 教程
