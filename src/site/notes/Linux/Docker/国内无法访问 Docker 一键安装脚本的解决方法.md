@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/21","permalink":"/note/21/","tags":["Linux","Docker"],"created":"2024-07-07 12:54:11","updated":"2024-07-07 12:54:14"}
+{"dg-publish":true,"dg-permalink":"note/21","permalink":"/note/21/","tags":["Linux","Docker"],"created":"2024-07-07 12:54:11","updated":"2024-07-07 13:35:22"}
 ---
 
 Docker 的一键安装脚本的域名 `get.docker.com` 无法访问了怎么办？
@@ -13,4 +13,10 @@ curl: (35) Recv failure: Connection reset by peer
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/docker/docker-install/master/install.sh | bash
+```
+
+如果 Github 无法访问，还可以用 ghproxy。
+
+```bash
+curl -fsSL https://mirror.ghproxy.com/raw.githubusercontent.com/docker/docker-install/master/install.sh | bash
 ```
