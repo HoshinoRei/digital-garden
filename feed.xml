@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-07-21T05:22:30Z</updated>
+    <updated>2024-07-21T05:27:20Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -417,6 +417,21 @@ curl: (35) Recv failure: Connection reset by peer
 
             </content>
             <link href="https://digital-garden.bling.moe/note/21/" >
+        </entry>
+        <entry>
+            <title>
+                AI Commits
+                
+            </title>
+            <updated>2024-07-21T13:24:11.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/23/</id>
+            <content type="html">
+                &lt;h2 id=&quot;介绍&quot; tabindex=&quot;-1&quot;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;Jetbrains IDE 的一个插件，可以根据 git diff 生成 commit message。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://plugins.jetbrains.com/plugin/21335-ai-commits&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;AI Commits 插件地址&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/23/" >
         </entry>
         <entry>
             <title>
