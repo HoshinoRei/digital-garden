@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-07-15T14:01:01Z</updated>
+    <updated>2024-07-21T05:18:56Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -328,6 +328,33 @@
 
             </content>
             <link href="https://digital-garden.bling.moe/note/22/" >
+        </entry>
+        <entry>
+            <title>
+                蓝牙 5.0 设备无法扫描低功耗设备的解决方法
+                
+            </title>
+            <updated>2024-06-30T10:51:16.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/17/</id>
+            <content type="html">
+                &lt;h2 id=&quot;教程&quot; tabindex=&quot;-1&quot;&gt;教程&lt;/h2&gt;
+&lt;p&gt;通过 &lt;code&gt;hcitool lescan&lt;/code&gt; 命令时，返回&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Set scan parameters failed: Input/output error
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;原来对于蓝牙 5.0 的设备，这个命令已废弃。我们应该使用下面的命令：&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://digital-garden.bling.moe/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;bluetoolctl scan le
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;参考&quot; tabindex=&quot;-1&quot;&gt;参考&lt;/h2&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/71929821&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hcitool lescan shows I/O error&lt;/a&gt; &lt;a href=&quot;https://digital-garden.bling.moe/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/17/" >
         </entry>
         <entry>
             <title>
