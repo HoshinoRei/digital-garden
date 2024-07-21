@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"note/5","permalink":"/note/5/","tags":["Obsidian"],"created":"2024-06-08 06:30:24","updated":"2024-06-08 07:00:30"}
+{"dg-publish":true,"dg-permalink":"note/5","permalink":"/note/5/","tags":["Obsidian"],"created":"2024-06-08 06:30:24","updated":"2024-06-08 15:52:37"}
 ---
 
 ## 教程
