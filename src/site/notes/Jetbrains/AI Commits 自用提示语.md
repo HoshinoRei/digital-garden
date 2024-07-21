@@ -2,7 +2,9 @@
 {"dg-publish":true,"dg-permalink":"note/24","permalink":"/note/24/","tags":["Jetbrains","AICommits"],"created":"2024-07-21 13:27:04","updated":"2024-07-21 13:30:12"}
 ---
 
-英文版
+[[Jetbrains/AI Commits\|AI Commits]]
+
+## 英文版
 
 ```
 Write a commit message that accurately summarizes the changes made in the given `git diff` output, following the best practices and conventional commit convention as described below. Your response should look like this (no codeblock), the response must be the {locale} language:
@@ -58,6 +60,8 @@ Here is the output of the `git diff`:
 --
 {diff}
 ```
+
+## 中文版
 
 ```
 按照下面的 `git diff` 输出的内容中所作的更改根据下面所述的最佳实践和常规提交约定编写一条提交信息，准确总结。你的回复应该如下所示并且无代码块，回复必须是 {locale} 语言：
