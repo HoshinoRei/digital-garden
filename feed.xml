@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-07-21T07:20:23Z</updated>
+    <updated>2024-07-21T07:21:09Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -441,7 +441,8 @@ curl: (35) Recv failure: Connection reset by peer
             <updated>2024-07-21T13:30:12.000Z</updated>
             <id>https://digital-garden.bling.moe/note/24/</id>
             <content type="html">
-                &lt;p&gt;英文版&lt;/p&gt;
+                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://digital-garden.bling.moe/note/23/&quot;&gt;AI Commits&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;英文版&quot; tabindex=&quot;-1&quot;&gt;英文版&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;Write a commit message that accurately summarizes the changes made in the given `git diff` output, following the best practices and conventional commit convention as described below. Your response should look like this (no codeblock), the response must be the {locale} language:
 
 &amp;lt;type&amp;gt;[optional scope]: &amp;lt;subject&amp;gt;
@@ -495,6 +496,7 @@ Here is the output of the `git diff`:
 --
 {diff}
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;中文版&quot; tabindex=&quot;-1&quot;&gt;中文版&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;按照下面的 `git diff` 输出的内容中所作的更改根据下面所述的最佳实践和常规提交约定编写一条提交信息，准确总结。你的回复应该如下所示并且无代码块，回复必须是 {locale} 语言：
 
 &amp;lt;类型&amp;gt;[可选的范围]: &amp;lt;主题&amp;gt;
