@@ -3,7 +3,7 @@
     <title>星野玲的数字花园</title>
     <link href="https://digital-garden.bling.moe/feed.xml" rel="self" >
     <link href="https://digital-garden.bling.moe" >
-    <updated>2024-08-16T01:58:06Z</updated>
+    <updated>2024-08-24T14:23:21Z</updated>
     <id>https://digital-garden.bling.moe</id>
         <entry>
             <title>
@@ -557,6 +557,26 @@ feat(components): 增加 `AreaSelector` 组件
 
             </content>
             <link href="https://digital-garden.bling.moe/note/24/" >
+        </entry>
+        <entry>
+            <title>
+                Home Assistant 如何将概览仪表盘恢复自动生成的状态
+                
+            </title>
+            <updated>2024-08-24T22:22:51.000Z</updated>
+            <id>https://digital-garden.bling.moe/note/25/</id>
+            <content type="html">
+                &lt;p&gt;在仪表盘编辑的菜单里，打开原始配置编辑器，删除里面的配置，用下面的配置替换即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;strategy:  
+  type: original-states
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;来源&quot; tabindex=&quot;-1&quot;&gt;来源&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://bbs.hassbian.com/forum.php?mod=viewthread&amp;amp;tid=15813&amp;amp;page=1&amp;amp;authorid=82016&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;请教：如何恢复Home Assistant 概览的默认界面&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://digital-garden.bling.moe/note/25/" >
         </entry>
         <entry>
             <title>
